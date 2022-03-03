@@ -1,0 +1,18 @@
+.row {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 5px solid gray;
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+
+/* .card:hover {
+  background-color: gray;
+  z-index: 1;
+} */
+img {
+  width: 12rem;
+  height: 100%;
+  object-fit: contain;
+}
