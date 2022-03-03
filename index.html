@@ -22,39 +22,29 @@
       class="main d-flex flex-column justify-content-center align-items-center"
     >
       <h1>Graduation Project of JavaScript API</h1>
-      <button>Search</button>
+      <div class="buttons d-flex gap-5">
+        <button id="homeBtn" type="button" class="btn btn-primary">Home</button>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your best food😋"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+      <h1>Menu Categories</h1>
       <div
         class="container d-flex flex-wrap gap-3 mt-3 justify-content-between"
-      >
-        <!-- <div class="card" style="width: 18rem">
-          <img
-            src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg/preview"
-            class="card-img-top"
-            alt="Here is a Photo"
-          />
-          <div class="card-body text-center">
-            <p class="card-text">DENEME 1</p>
-          </div>
-        </div> -->
-        <!-- <div class="row row-cols-2" style="width: 25rem">
-          <div class="col">
-            <img
-              src="https://www.themealdb.com/images/category/beef.png"
-              alt="here is a Photo"
-            />
-          </div>
-          <div class="col">
-            <div class="ms-3">
-              <h5 class="card-title">Name</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary mb-2">Go to Category</a>
-            </div>
-          </div>
-        </div> -->
-      </div>
+      ></div>
     </div>
     <script src="index.js"></script>
   </body>
