@@ -10,13 +10,13 @@ const searchBtn = document.getElementById("button-addon2");
 // async function getSearchMeal() {
 //   const mealInput = document.querySelector(".form-control").value;
 //   const responseOfMeal = await fetch(
-//     `https://www.themealdb.com/api/json/v1/1/search.php?f=a${mealInput}`
+//     `https://www.themealdb.com/api/json/v1/1/search.php?s=${mealInput}`
 //   );
 //   const dataOfMeals = await responseOfMeal.json();
 //   console.log(dataOfMeals);
-//   // dataOfMeals.meals.forEach((meal) =>
-//   //   console.log(meal.strMeal, meal.strMealThumb)
-//   // );
+//   dataOfMeals.meals.forEach((meal) =>
+//     console.log(meal.strMeal, meal.strMealThumb)
+//   );
 // }
 
 homeBtn.addEventListener("click", starter);
@@ -30,6 +30,7 @@ async function getDataOfAPI(url) {
   const data = await response.json();
   displayCategory(data);
 }
+
 function displayCategory(data) {
   let cardsOfCategory = document.querySelector(".container");
   cardsOfCategory.innerHTML = "";
